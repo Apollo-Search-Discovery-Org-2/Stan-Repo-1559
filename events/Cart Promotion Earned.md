@@ -1,0 +1,37 @@
+# Cart Promotion Earned
+
+### This event is part of the page load sequence, including virtual page loads in the case of single page apps, and must be pushed between the `Page Load Started` and `Page Load Completed` events.
+
+## Javascript Code
+```js
+window.appEventData = window.appEventData || [];
+appEventData.push({
+  "event": "Cart Promotion Earned"
+});
+```
+
+
+
+
+
+## Attached Notes
+
+<p>Аз съм мноо убав!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<pre class="language-markup"><code>window.appEventData = window.appEventData || [];
+appEventData.push({
+  "event": "Accommodation Booking Completed",
+  "booking": {
+    "roomList": [
+      {
+        "location": {
+          "locationId": "&lt;locationId&gt;"
+        }
+      }
+    ],
+    "total": {
+      "currency": "&lt;currency&gt;"
+    }
+  }
+});</code></pre>
