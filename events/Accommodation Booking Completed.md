@@ -1,0 +1,52 @@
+# Accommodation Booking Completed
+
+### 
+
+## Javascript Code
+```js
+window.appEventData = window.appEventData || [];
+appEventData.push({
+  "event": "Accommodation Booking Completed",
+    "booking": {
+        "roomList": [
+            {
+                "location": {
+                    "locationId": "<locationId>"
+                }
+            }
+        ],
+        "total": {
+            "currency": "<currency>"
+        }
+    }
+});
+```
+
+## Variable Definitions
+
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|currency|string|Currency of the payment for the booking. ISO 4217 \(3 character alpha\), uppercase |USD, CAD, GBP, CHF|^[A-Z]{3}$|3|3||||
+|locationId|string|Unique Identifier of a Location. |155, 65588, 987764448|||||||
+
+## Attached Notes
+
+<p>&nbsp;</p>
+<p><img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="ubaa snimka" /></p>
+<p>&nbsp;</p>
+<pre class="language-markup"><code>window.appEventData = window.appEventData || [];
+appEventData.push({
+  "event": "Accommodation Booking Completed",
+  "booking": {
+    "roomList": [
+      {
+        "location": {
+          "locationId": "&lt;locationId&gt;"
+        }
+      }
+    ],
+    "total": {
+      "currency": "&lt;currency&gt;"
+    }
+  }
+});</code></pre>
